@@ -1,0 +1,32 @@
+name: CookieClicker
+version: '1.0-SNAPSHOT'
+main: RavenMC.cookieClicker.CookieClicker
+api-version: '1.20'
+prefix: CookieClicker
+authors: [ Realisticrave ]
+softdepend: [DecentHolograms, PlaceholderAPI]
+description: A cookie clicker plugin with upgrades and leaderboards
+
+commands:
+  cookieclicker:
+    description: Main command for Cookie Clicker plugin
+    usage: |
+      /<command> - Open the Cookie Clicker GUI
+      /<command> help - Show help menu
+      /<command> place - Place a cookie clicker block
+      /<command> remove - Remove a cookie clicker block
+      /<command> admin - Open admin configuration
+      /<command> leaderboard - Show leaderboard information
+      /<command> leaderboard create - Create a hologram leaderboard
+      /<command> reload - Reload configuration
+    aliases: [cc]
+
+permissions:
+  cookieclicker.use:
+    description: Allows using the cookie clicker
+    default: true
+  cookieclicker.admin:
+    description: Allows using admin commands and GUI
+    default: op
+    children:
+      cookieclicker.use: true
