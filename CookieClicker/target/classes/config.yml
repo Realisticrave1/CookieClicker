@@ -1,0 +1,75 @@
+# CookieClicker Configuration for Minecraft 1.20.1
+
+# The block that players need to click to earn cookies
+cookie-block: GOLD_BLOCK
+
+# Multiplier upgrade settings
+multiplier:
+  base-cost: 50
+  cost-multiplier: 1.5
+  cookies-per-level: 1
+
+# Automation upgrade settings
+automation:
+  base-cost: 100
+  cookies-per-level: 1
+  message-interval: 5 # How often (in seconds) to notify players about automation earnings
+
+# Bank settings
+bank:
+  interest-rate: 0.01  # 1% interest rate
+  interest-interval: 3600  # Interval in seconds (1 hour)
+
+# Crate settings
+crates:
+  drop-chance: 0.05  # 5% chance to drop a crate when clicking
+  common-weight: 70  # 70% chance for common crate
+  rare-weight: 25    # 25% chance for rare crate
+  epic-weight: 5     # 5% chance for epic crate
+
+# Raven Coin shop settings
+raven-coin-shop:
+  enabled: true
+  custom-effects-plugin: "ExtraEffects"  # Name of plugin providing effects
+
+# Leaderboard settings
+leaderboard:
+  update-interval: 30 # How often (in seconds) to update the leaderboard
+  display-limit: 10 # How many players to display on the leaderboard
+  board-name: "cookieclicker"
+  display-name: "&6Cookie Leaderboard"
+
+# Messages
+messages:
+  earn-cookies: "&6You earned %amount% cookies! Total: %total%"
+  not-enough-cookies: "&cYou don't have enough cookies!"
+  upgrade-multiplier: "&6You upgraded your click multiplier to level %level%!"
+  upgrade-automation: "&6You upgraded your automation to level %level%!"
+  automation-earned: "&6Your automation generated %amount% cookies!"
+  no-permission: "&cYou don't have permission to use this command."
+  config-reloaded: "&aConfiguration has been reloaded."
+  config-saved: "&aConfiguration has been saved."
+  clicker-placed: "&aA cookie clicker has been placed at &e%x%, %y%, %z%&a."
+  clicker-removed: "&aThe cookie clicker has been removed."
+  not-a-clicker: "&cThis block is not a cookie clicker."
+  no-block-in-sight: "&cYou must be looking at a block."
+  leaderboard-created: "&aA cookie leaderboard has been created at your location."
+  cannot-break-clicker: "&cYou cannot break a cookie clicker block."
+  bank-deposit: "&aYou deposited %amount% cookies into your bank."
+  bank-withdraw: "&aYou withdrew %amount% cookies from your bank."
+  bank-interest: "&aYour bank account earned %amount% cookies in interest!"
+  not-enough-bank-cookies: "&cYou don't have enough cookies in your bank!"
+  crate-opened: "&aYou opened a %type% crate and received %value% %reward%!"
+  received-crate: "&aYou received %amount% %type% crate(s)!"
+  earned-raven-coin: "&5&lWOW! &dYou found %amount% Raven Coin! These are extremely rare!"
+  upgrade-cookies: "&aYou gained %amount% cookies from your upgrade item!"
+
+# Integration with ajLeaderboard (optional)
+ajleaderboard:
+  enabled: true
+  board-name: "cookieclicker"
+  display-name: "&6Cookie Leaderboard"
+
+# Permissions
+# cookieclicker.use - Allows using the cookie clicker
+# cookieclicker.admin - Allows using admin commands and GUI
